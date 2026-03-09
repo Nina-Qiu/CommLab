@@ -1,5 +1,5 @@
-# This is Nina's CommLab Page
-## Here you'll find my projects :)
+# Nina's CommLab Projects
+
 I made them all this year.
 - Journey through spreadsheets
 - Lifescroll
