@@ -1,7 +1,7 @@
 # Nina's Web Creations
 Hey～ My name is Nina. I am a sophomore at NYU Shanghai majoring in Interactive Media and Business.
 
-Below is a picture of me ^_^
+This is  me ^_^
 
 ![me](me.png)
 

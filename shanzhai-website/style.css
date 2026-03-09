@@ -262,9 +262,32 @@ p{
     margin-left: 7.5px;
 }
 
+.course2:hover{
+    box-shadow: 0 4px 10px rgba(130, 130, 130, 0.2);
+    .course2name{
+        color:rgb(2, 111, 191);
+        text-decoration: underline;
+    }
+}
+
 .course2image{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.course2text{
+    margin-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.course2code{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    top: -25px;
 }
 
 .lastcourses{
