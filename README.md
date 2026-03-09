@@ -1,5 +1,5 @@
 # Nina's Web Creations
-The live link to this page is: 
+The live link to this page is: [https://nina-qiu.github.io/CommLab](https://nina-qiu.github.io/CommLab)
 Hey～ My name is Nina. I am a sophomore at NYU Shanghai majoring in Interactive Media and Business.
 
 This is  me ^_^
