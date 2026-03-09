@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    background-color: bisque;
+}
+
+.box{
+    outline: 1px dashed black;
+    width: 200px;
+    padding: 30px;
+}
+
+.box p{
+    background-color: lightblue;
+    text-align: center;
+}
+
+.one{
+    position: relative; 
+    /*in relation to its original position, 
+    other elements still remains in their original position
+    as if nothing happened*/
+    left: 10px;
+    top: 20px;
+}
+
+.one span{
+    position: relative;
+    left: 5px;
+    top: -3px;
+}
+
+.two{
+    position: absolute; 
+    /*in relation to the (0,0) of the place,
+    not reponsive to screen size changes*/
+    left: 0px;
+    top: 0px;
+}
+
+.three{
+    position: fixed;
+    /*in relation to the browser window*/
+    left: 0px;
+    top: 0px;
+}
+
+.six{
+    height: 2000px;
+}
+
+.five{
+    position: sticky;
+    top: 100px;
+    bottom: 300px;
+}
+
+.seven{
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    height: 50vh;
+    position: relative;
+}
+
+.sevensChild{
+    outline: green 1px dotted;
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.sevensChild p{
+    background-color: black;
+    color: greenyellow;
+    margin: 0;
+}

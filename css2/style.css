@@ -1,0 +1,27 @@
+body{
+    margin: o;
+}
+.punch{
+    width: 200px;
+    background-color: pink;
+    /* margin-left: 45px; /*center the image, but there's a better way*/
+
+}
+
+.punchWrapper{
+    border: 1px dashed black;
+    width: 24%;
+    margin-bottom: 30px;
+    /* margin-left: 10px; */
+    /* padding: 5px; */
+    display: inline-block; /* now can give span width and height, must be deleted for margin: auto to work*/
+    /* margin: auto; set the whole box at the center of the page */
+}
+
+.punchWrapper:nth-child(even){
+    border: 5px solid red;
+}
+
+.punchWrapper:hover{
+    border: 4px solid blue;
+}

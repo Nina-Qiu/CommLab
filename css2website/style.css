@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.mainWrapper{
+    background-color: pink;
+    height: 550px;
+    /* width: 500px; to make it less than the full page */
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#headerWrapper{
+    background-color: lightblue;
+}
+
+#headerWrapper h1{
+    text-align: center;
+    color: white;
+}
+
+.navWrapper{
+    background-color: lightslategray;
+    width: 100px;
+    height: 23px;
+    text-align: center;
+    outline: 1px white solid;
+    display:inline-block;
+}
+
+#navButton{
+    outline: 2px dotted red;
+    /* width: 415px; */
+    /* margin: auto; */
+    text-align: center;
+}
+
+/* .navWrapper h2{
+    color: white;
+    text-align: center;
+} */
+
+.container{
+    outline: 5px maroon dotted;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 50px;
+
+}
+
+.item{
+    outline: rgb(2, 2, 99) solid 2px;
+    width: 200px;
+    height: 180px;
+    text-align: center;
+    /* flex-grow: 4; */
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(247, 23, 247);
+    justify-content: space-between;
+}
+
+.abcwrapper{
+    display: flex;
+}

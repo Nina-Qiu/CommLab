@@ -1,0 +1,25 @@
+body{
+    background-color: burlywood;
+}
+
+.container{
+    display: flex;
+    outline: 2px maroon dotted;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    width: 200px;
+    outline: orange solid 2px;
+}
+
+.second{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
