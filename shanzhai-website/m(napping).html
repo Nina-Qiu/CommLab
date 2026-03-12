@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Micro-Napping</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+
+<body>
+    <div class="boxWrapper">
+        <div class="box">
+            <div class="timerWrapper">
+                <h2>Start Micro-Napping</h2>
+
+            <p class="timepassed">Time Passed: <span id="timer">0</span> seconds</p>
+
+            <button onclick="startTimer()" class="start">Start Micro-Napping</button>
+            <button onclick="stopTimer()" class="stop">Stop Micro-Napping</button>
+
+            <p id="result"></p>
+
+            <div id="restart" style="display:none;">
+                <p class="q">Would you like to start napping again?</p>
+                <button onclick="resetTimer()" class="yes1">Yes</button>
+                <button onclick="resetTimer()" class="yes2">Yes</button>
+            </div>
+
+            <script>
+                let time = 0;
+                let timer = null;
+
+                function startTimer() {
+                    if (timer === null) {
+                        timer = setInterval(function () {
+                            time++;
+                            document.getElementById("timer").textContent = time;
+                        }, 1000);
+                    }
+                }
+
+                function stopTimer() {
+                    clearInterval(timer);
+                    timer = null;
+
+                    let functionality = Math.min(time * 2, 100);
+                    document.getElementById("result").textContent =
+                        "You are " + functionality + "% more functional.";
+
+                    document.getElementById("restart").style.display = "block";
+                }
+
+                function resetTimer() {
+                    time = 0;
+                    document.getElementById("timer").textContent = 0;
+                    document.getElementById("result").textContent = "";
+                    document.getElementById("restart").style.display = "none";
+                }
+            </script>
+            </div>
+            <div class="button">
+                <a href="k(shanzhai-homepage).html"><p style="font-size: 14.4px; color: white">Go Back</p></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

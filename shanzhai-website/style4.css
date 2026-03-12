@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right, #D9C6F2, #FFD6CC);
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.boxWrapper{
+    width: 100%;
+    height: 600px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    width: 500px;
+    height: 520px;
+    background-color: rgb(253, 244, 244);
+}
+
+.errorWrapper{
+    position:relative;
+    left: 50px;
+    top: 20px;
+}
+
+.messageWrapper{
+    position:relative;
+    left: 50px;
+    top: 20px;
+}
+
+.messageWrapper p{
+    font-size: 18px;
+    line-height: 2;
+}
+
+.button{
+    width: 200px;
+    border-radius: 25px;
+    background-color: rgb(217, 198, 242);
+    text-align: center;
+    padding: 1px;
+    position:relative;
+    left: 45px;
+    top: 80px;
+}
+
+.button a{
+    color: white;
+    text-decoration: none;
+}
+
+.button a:visited{
+    color: white;
+    text-decoration: none
+}
+
+.button:hover{
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+}

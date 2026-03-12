@@ -1,0 +1,686 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 236, 236);
+}
+
+.body{
+    background-color: rgb(253, 244, 244);
+    min-width: 1300px;
+}
+
+.header{
+    background: linear-gradient(to left, #D9C6F2, #FFD6CC);
+    width: 100%;
+    height: 4px;
+}
+
+.nyuWrapper{
+    width: 140px;
+    padding-left: 5px;
+    padding-top: 18.5px;
+    display: inline-block;
+    position: relative;
+    top: 6.5px;
+    left: 24.5px;
+}
+
+.navbarWrapper{
+    display: inline-block;
+    margin-left: 630px;
+}
+
+.navbars{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarAWrapper{
+    display: inline-block;
+    padding-top: 18.5px;
+    border-top: 4px solid transparent;
+}
+
+.navbarAWrapper:hover{
+    border-top: 4px solid rgb(217, 198, 242);
+}
+
+.navbarBWrapper{
+    display: inline-block;
+    padding-top: 18.5px;
+    border-top: 4px solid transparent;
+}
+
+.navbarBWrapper:hover{
+    border-top: 4px solid rgb(217, 198, 242);
+}
+
+.navbarCWrapper{
+    display: inline-block;
+    padding-top: 18.5px;
+    border-top: 4px solid transparent;
+}
+
+.navbarCWrapper:hover{
+    border-top: 4px solid rgb(217, 198, 242);
+}
+
+.navbarDWrapper{
+    display: inline-block;
+    padding-top: 18.5px;
+    border-top: 4px solid transparent;
+}
+
+.navbarDWrapper:hover{
+    border-top: 4px solid rgb(217, 198, 242);
+}
+
+.navbarEWrapper{
+    display: inline-block;
+    padding-top: 18.5px;
+    border-top: 4px solid transparent;
+}
+
+.navbarEWrapper:hover{
+    border-top: 4px solid rgb(217, 198, 242);
+}
+
+.navbarFWrapper{
+    display: inline-block;
+    padding-top: 18.5px;
+    border-top: 4px solid transparent;
+}
+
+.navbarFWrapper:hover{
+    border-top: 4px solid rgb(217, 198, 242);
+}
+
+.border1{
+    margin-top: 22px;
+    background-color: rgb(231, 232, 235);
+    width: 100%;
+    height: 1px;
+}
+
+.contents{
+    margin-left: 50px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.border2{
+    background-color: rgb(231, 232, 235);
+    width: 100%;
+    height: 1px;
+}
+
+.welcomeWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome{
+    width: 1167px;
+    height: 200px;
+    background: linear-gradient(to right, #D9C6F2, #FFD6CC);
+}
+
+.welcome p{
+    color: rgb(253, 244, 244);
+    font-size: 35px;
+    font-weight: bold;
+    position:relative;
+    left: 25px;
+    top: 110px;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.under{
+    width: 1167px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses{
+    background-color: rgb(253, 244, 244);
+    width: 550px;
+    height: 750px;
+    border-radius: 8px;
+    margin-top: 35px;
+    padding-top: 5px;
+    box-shadow: 0 2px 10px rgba(170, 170, 170, 0.2);
+}
+
+.mycourses{
+    margin-left: 20px;
+}
+
+.terms{
+    width: 450px;
+    margin-left: 23px;
+    border-bottom: 1px solid rgb(231, 232, 235);
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -5px;
+}
+
+.terms p{
+    line-height: 10px;
+}
+
+.termtexts:hover{
+    color:rgb(217, 198, 242);
+}
+
+.thisspring{
+    border-bottom:rgb(217, 198, 242) solid 4px;
+}
+
+.term{
+    height: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.firstcourses{
+    width: 550;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.course1{
+    width: 245px;
+    height: 250px;
+    border: rgb(231, 232, 235) solid 1px;
+    border-radius: 8px;
+    margin-right: 7.5px;
+}
+
+.course1name{
+    text-decoration: none;
+}
+.course1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.course1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.course1:hover a{
+    color:rgb(217, 198, 242);
+    text-decoration: underline;
+}
+
+.course1:hover{
+    box-shadow: 0 4px 10px rgba(130, 130, 130, 0.2);
+}
+
+.course1image{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course1text{
+    margin-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.course1code{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    top: -25px;
+}
+
+.course2{
+    width: 245px;
+    height: 250px;
+    border: rgb(231, 232, 235) solid 1px;
+    border-radius: 8px;
+    margin-left: 7.5px;
+}
+
+.course2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.course2 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.course2:hover a{
+    color:rgb(217, 198, 242);
+    text-decoration: underline;
+}
+
+.course2:hover{
+    box-shadow: 0 4px 10px rgba(130, 130, 130, 0.2);
+}
+
+
+.course2image{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course2text{
+    margin-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.course2code{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    top: -25px;
+}
+
+.course2message{
+    position:relative;
+    top: -23px;
+    left: 18px;
+}
+
+.lastcourses{
+    width: 550;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.course3{
+    width: 245px;
+    height: 260px;
+    border: rgb(231, 232, 235) solid 1px;
+    border-radius: 8px;
+    margin-right: 7.5px;
+}
+
+.course2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.course3 a{
+    color: black;
+    text-decoration: none;
+}
+
+.course3 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.course3:hover a{
+    color: rgb(217, 198, 242);
+    text-decoration: underline;
+}
+
+.course3:hover{
+    box-shadow: 0 4px 10px rgba(130, 130, 130, 0.2);
+}
+
+.course3image{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course3text{
+    margin-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.course3code{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    top: -25px;
+}
+
+.course4{
+    width: 245px;
+    height: 260px;
+    border: rgb(231, 232, 235) solid 1px;
+    border-radius: 8px;
+    margin-left: 7.5px;
+}
+
+.course4 a{
+    color: black;
+    text-decoration: none;
+}
+
+.course4 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.course4:hover a{
+    color:rgb(217, 198, 242);
+    text-decoration: underline;
+}
+
+.course4:hover{
+    box-shadow: 0 4px 10px rgba(130, 130, 130, 0.2);
+}
+
+.course4image{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course4text{
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    top: -2px;
+}
+
+.course4code{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left: 15px;
+    position: relative;
+    top: -25px;
+}
+
+.view{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 23px;
+    top: -2px;
+}
+
+.others{
+
+}
+
+.others1{
+    background-color: rgb(253, 244, 244);
+    width: 550px;
+    height: 440px;
+    border-radius: 8px;
+    margin-top: 35px;
+    padding-top: 10px;
+    box-shadow: 0 2px 10px rgba(170, 170, 170, 0.2);
+}
+
+.worktodo{
+    margin-left: 20px;
+}
+
+.overdue{
+    position:relative;
+    left: 20px;
+    top: 5px;
+}
+
+.overdueborder{
+    width: 500px;
+    height: 2px;
+    background-color: rgb(231, 232, 235);
+    position:relative;
+    left: 20px;
+    top: -5px;
+}
+
+.overdue1{
+    height: 50px;
+    width: 530px;
+    border-radius: 8px;
+    position:relative;
+    left: 9px;
+    top: -5px;
+}
+
+.overdueimage{
+    position:relative;
+    left: 10px;
+    top: 5px;
+    display: inline-block;
+}
+
+.overduetext{
+    display: inline-block;
+    position:relative;
+    left: 20px;
+    top: -10px;
+}
+
+.duedate{
+    position:relative;
+    left: 54px;
+    top: -45px;
+}
+
+.overdue1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.overdue1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.overdue1:hover a{
+    color: rgb(217, 198, 242);
+    text-decoration:underline;
+}
+
+.overdue1:hover{
+    border: rgb(231, 232, 235) solid 1px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+
+.todo{
+    position:relative;
+    left: 20px;
+}
+
+.todoborder{
+    width: 500px;
+    height: 2px;
+    background-color: rgb(231, 232, 235);
+    position:relative;
+    left: 20px;
+    top: -9px;
+}
+
+.todo1{
+    height: 50px;
+    width: 530px;
+    border-radius: 8px;
+    position:relative;
+    left: 9px;
+    top: -9px;
+}
+
+.todo1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.todo1 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.todo1:hover a{
+    color: rgb(217, 198, 242);
+    text-decoration:underline;
+}
+
+.todo1:hover{
+    border: rgb(231, 232, 235) solid 1px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+
+.todo2{
+    height: 50px;
+    width: 530px;
+    border-radius: 8px;
+    position:relative;
+    left: 9px;
+    top: -9px;
+}
+
+.todoimage{
+    position:relative;
+    left: 12px;
+    top: 5px;
+    display: inline-block;
+}
+
+.todo2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.todo2 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.todo2:hover a{
+    color: rgb(217, 198, 242);
+    text-decoration:underline;
+}
+
+.todo2:hover{
+    border: rgb(231, 232, 235) solid 1px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+
+.todo3{
+    height: 50px;
+    width: 530px;
+    border-radius: 8px;
+    position:relative;
+    left: 9px;
+    top: -9px;
+}
+
+.todo3 a{
+    color: black;
+    text-decoration: none;
+}
+
+.todo3 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.todo3:hover a{
+    color: rgb(217, 198, 242);
+    text-decoration:underline;
+}
+
+.todo3:hover{
+    border: rgb(231, 232, 235) solid 1px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+
+.todo4{
+    height: 50px;
+    width: 530px;
+    border-radius: 8px;
+    position:relative;
+    left: 9px;
+    top: -9px;
+}
+
+.todo4 a{
+    color: black;
+    text-decoration: none;
+}
+
+.todo4 a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.todo4:hover a{
+    color: rgb(217, 198, 242);
+    text-decoration:underline;
+}
+
+.todo4:hover{
+    border: rgb(231, 232, 235) solid 1px;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 0.2);
+}
+
+.others2{
+    background-color: rgb(253, 244, 244);
+    width: 550px;
+    height: 595px;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding-top: 10px;
+    box-shadow: 0 2px 10px rgba(170, 170, 170, 0.2);
+}
+
+.announcements{
+    margin-left: 20px;
+}
+
+.announcementsimages{
+    position:relative;
+    left: 20px;
+    top: 5px;
+}
+
+.others3{
+    background-color: rgb(253, 244, 244);
+    width: 550px;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding-top: 10px;
+    box-shadow: 0 2px 10px rgba(170, 170, 170, 0.2);
+}
+
+.calendar{
+    margin-left: 20px;
+}
+
+.calendarimage{
+    position:relative;
+    left: 21px;
+    top: 10px;
+}
+
+.endimage{
+    text-align: center;
+    padding: 20px;
+}
