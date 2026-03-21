@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    background-color: burlywood;
+}
+
+.aWrapper{
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#a{
+    width: 750px;
+}
+
+p{
+    font-size: 30px;
+    line-height: 100px;
+}
+
+#a span{
+    display: inline-block;
+}
+
+@keyframes dance1{
+    from{
+        transform: translate(0px, 45px) scale(1);
+    }
+    to{
+        transform: translate(0px, -45px) scale(1.5);
+    }
+}
+
+@keyframes dance2{
+    from{
+        transform: translate(0px, -45px) scale(1.5);
+    }
+    to{
+        transform: translate(0px, 45px) scale(1);
+    }
+}
+
+#a .no1:nth-child(odd){
+    animation: dance1 2s ease-in-out infinite alternate;
+}
+
+#a .no1:nth-child(even){
+    animation: dance2 2s ease-in-out infinite alternate; 
+}
+
+#theBeast{
+    margin-top: 30px;
+    text-align: center;
+    transition: background-color 1s linear, color 3s linear;
+}
+
+#theBeast:hover{
+    background-color: black;
+    color: white;
+}
+
+#theBeast:hover .e{
+    color: red;
+    transform: scale(3);
+    transition: color 1s linear 1s, transform 1s linear 1s;
+}
+
+.e{
+    color: black;
+    transition: color 1s linear, transform 1s linear;
+}
+
+.thirdWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    margin-top: 50px;
+}
+
+.first{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.first:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+.second{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.second:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+.third{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.third:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+.fourth{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.fourth:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+.fifth{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.fifth:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+.sixth{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.sixth:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+.seventh{
+    display: inline-block;
+    margin-right: 7px;
+    color: brown;
+    transition: transform .5s, color .5s;
+}
+
+.seventh:hover{
+    color: black;
+    transform: translate(0px, -50px) scale(1.2);
+}
+
+@keyframes fly{
+    from{
+        transform: translate(0px, -75px);
+        color: red;
+    }
+    to{
+        transform: translate(0px, 75px);
+        color: black;
+    }
+}
+
+#f1{
+    animation: fly 1s infinite alternate linear;
+}
+
+#f2{
+    animation: fly 1s infinite alternate linear;
+    animation-delay: .2s;
+}
+
+#f3{
+    animation: fly 1s infinite alternate linear;
+    animation-delay: .4s;
+}
+
+#f4{
+    animation: fly 1s infinite alternate linear;
+    animation-delay: .6s;
+}
+
+#f5{
+    animation: fly 1s infinite alternate linear;
+    animation-delay: .8s;
+}
+
+#f6{
+    animation: fly 1s infinite alternate linear;
+    animation-delay: 1s;
+}
+
+#f7{
+    animation: fly 1s infinite alternate linear;
+    animation-delay: 1.2s;
+}
+
+#dancers{
+    text-align: center;
+    margin-top: 40px;
+}
