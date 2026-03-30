@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    background-color: white;
+    transition: background-color 3s;
+}
+
+.changeBackground{
+    background-color: rgb(232, 245, 189);
+}
+
+.textWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 310px;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: color 3s;
+}
+
+.changeText{
+    color: rgb(132, 177, 121);
+}
+
+.sliderWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 320px;
+}
+
+.sliderOutside{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: rgb(190, 190, 190);
+    transition: background-color .5s;
+}
+
+.changeColor{
+    background-color: rgb(52, 213, 52);
+}
+
+.sliderInside{
+    display: flex;
+    margin-left: 3px;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 20px;
+    transition: transform .5s;
+}
+
+.changePosition{
+    transform: translate(29px, 0px);
+}
+
+.functionsWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+}
+
+button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    border: rgb(132, 177, 121) solid 1px;
+    color: rgb(132, 177, 121);
+    background-color: rgb(199, 234, 187);
+}
+
+.subWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 370px;
+}
+
+.flowerWrapper{
+    margin-right: 20px;
+}
+
+.breezeWrapper{
+    margin-left: 20px;
+}
+
+.backWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 390px;
+}
+
+.back{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    border: rgb(132, 177, 121) solid 1px;
+    color: rgb(132, 177, 121);
+    background-color: rgb(199, 234, 187);;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(0px, 0px);
+    }
+
+    25%{
+        transform: translate(5px, 0px);
+    }
+
+    50%{
+        transform: translate(-5px, 0px);
+    }
+
+    75%{
+        transform: translate(5px, 0px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+.breeze{
+    animation: shake 1s 7;
+}
