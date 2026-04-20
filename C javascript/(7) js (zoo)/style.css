@@ -1,0 +1,37 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.enclosure{
+    height: 200px;
+    width: 200px;
+    background-color: cornflowerblue;
+    position: absolute;
+}
+
+#giraffeEnclosure{
+    left: 10%;
+    top: 20%;
+}
+
+#monkeyEnclosure{
+    left: 40%;
+    top: 60%;
+}
+
+#snakeEnclosure{
+    left: 70%;
+    top: 30%;
+}
+
+.monkey{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.giraffe{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
