@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    background-color: rgb(253, 245, 212);
+}
+
+.empty{
+    height: 750px;
+    background-color: rgb(253, 245, 212);
+    border: 1px grey solid;
+}
+
+.flower1{
+    position: fixed;
+    left: 80%;
+    z-index: 2;
+}
+
+.rebeccaWrapper{
+    padding: 0px;
+    position: fixed;
+    left: 105%;
+    top: 75px;
+    z-index: 1;
+}
+
+.rebeccaWrapper p{
+    line-height: 0px;
+    font-size: 30px;
+}
+
+.trainWrapper{
+    padding: 0px;
+    position: fixed;
+    left: 100%;
+    top: 75px;
+    z-index: 1;
+}
+
+.trainWrapper p{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 0px;
+}
