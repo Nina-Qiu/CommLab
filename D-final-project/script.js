@@ -19,37 +19,46 @@ function windowWasScrolled() {
 
 
     // this section happens from 0 - 20 percent
-    if(percentage < 20){
+    if (percentage < 20) {
         let windowWidth = window.innerWidth;
         // let train_x_min = windowWidth - 10;
         let train_full_distance = windowWidth + 480;
-        let train_x = train_full_distance * (percentage/20);
+        let train_x = train_full_distance * (percentage / 20);
 
         document.querySelector(".trainWrapper").style.transform = "translate(" + -train_x + "px, 75px)"
 
-        if (percentage < 8) {
+        if (percentage < 7.5) {
             // let rebecca_x_min = windowWidth - 10;
             let rebecca_full_distance = windowWidth + 480;
-            let rebecca_x = rebecca_full_distance * (percentage/20);
+            let rebecca_x = rebecca_full_distance * (percentage / 20);
             document.querySelector(".rebeccaWrapper").style.transform = "translate(" + -rebecca_x + "px, 75px)"
         }
 
-        if(percentage > 15){
-            let flower1_full_distance = 500;
-            let flower1_x = flower1_full_distance * (percentage-15)/(20-15);
-            document.querySelector(".flower1").style.transform = "translateX(" + flower1_x + "px)";
-        }
+        if (percentage > 15) {
+            document.querySelector(".flower1").style.transform = "translateX(500px)";
+            document.querySelector(".flower2").style.transform = "translateX(-600px) rotate(45deg)";
+            document.querySelector(".sun").style.transform = "translate(-300px, 300px)";
+            document.querySelector(".house").style.transform = "translateX(750px)";
+            document.querySelector(".paper").style.transform = "translateX(1000px)";
+            document.querySelector(".billWrapper").style.transform = "translateX(600px)";
 
-        if(percentage > 15){
-            let flower2_full_distance = 600;
-            let flower2_x = flower2_full_distance * (percentage-15)/(20-15);
-            document.querySelector(".flower2").style.transform = "translateX(" + -flower2_x + "px) rotate(30deg)";
+        } else {
+            document.querySelector(".flower1").style.transform = "translateX(0px)";
+            document.querySelector(".flower2").style.transform = "translateX(0px) rotate(30deg)";
+            document.querySelector(".sun").style.transform = "translate(0px, 0px)";
+            document.querySelector(".house").style.transform = "translateX(0px)";
+            document.querySelector(".paper").style.transform = "translateX(0px)";
+            document.querySelector(".billWrapper").style.transform = "translateX(0px)";
         }
     }
 
-    
-
+    if (percentage > 25){
+            document.querySelector(".arrow").style.transform = "translateX(600px) rotate(75deg)";
+            document.querySelector(".hierWrapper").style.transform = "translateX(850px)";
+        } else {
+            document.querySelector(".arrow").style.transform = "translateX(0px) rotate(75deg)";
+            document.querySelector(".hierWrapper").style.transform = "translateX(0px)";
+        }
 }
-
 
 window.addEventListener("scroll", windowWasScrolled);

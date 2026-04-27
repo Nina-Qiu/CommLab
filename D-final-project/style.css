@@ -9,11 +9,25 @@ body{
     border: 1px grey solid;
 }
 
+.chapter1{
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    text-align: center;
+}
+
+.chapter1 p{
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 3px;
+    color: rgb(139, 111, 71);
+}
+
 .flower1{
     position: fixed;
     top: 75px;
     left: 75%;
     z-index: 2;
+    transition: transform 1s ease-in;
 }
 
 .flower2{
@@ -22,6 +36,7 @@ body{
     left: -12%;
     transform: rotate(30deg);
     z-index: 2;
+    transition: transform 1s ease-in;
 }
 
 .rebeccaWrapper{
@@ -35,6 +50,7 @@ body{
 .rebeccaWrapper p{
     line-height: 0px;
     font-size: 40px;
+    font-style: italic;
 }
 
 .trainWrapper{
@@ -50,3 +66,66 @@ body{
     font-weight: bold;
     line-height: 0px;
 }
+
+.sun{
+    position: fixed;
+    left: 105%;
+    top: -45%;
+    transition: transform 1s ease-in;
+}
+
+.house{
+    position: fixed;
+    left: -63%;
+    top: 20%;
+    z-index: 2;
+    transition: transform 1s ease-in;
+}
+
+.paper{
+    position: fixed;
+    left: -80%;
+    top: 50%;
+    z-index: 1;
+    transition: transform 1s ease-in;
+}
+
+.billWrapper{
+    padding: 0px;
+    position: fixed;
+    left: -62px;
+    top: 295px;
+    z-index: 1;
+    transition: transform 1s ease-in;
+}
+
+.billWrapper p{
+    line-height: 0px;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.arrow{
+    padding: 0px;
+    position: fixed;
+    left: -62px;
+    top: 350px;
+    z-index: 1;
+    transform: rotate(75deg);
+    transition: transform 1s ease-in;
+}
+
+.hierWrapper{
+    padding: 0px;
+    position: fixed;
+    left: -200px;
+    top: 350px;
+    z-index: 1;
+    transition: transform 1s ease-in;
+}
+
+.hierWrapper p{
+    line-height: 0.5px;
+    font-size: 25px;
+    font-style: italic;
+};
