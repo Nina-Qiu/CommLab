@@ -1,131 +1,70 @@
 body{
-    margin: 0px;
-    background-color: rgb(253, 245, 212);
+    background-color: rgb(58, 41, 26);
 }
 
-.empty{
-    height: 750px;
-    background-color: rgb(253, 245, 212);
-    border: 1px grey solid;
-}
-
-.chapter1{
+.folklore{
+    margin-top: 200px;
     width: 100%;
-    position: fixed;
-    top: 10px;
     text-align: center;
 }
 
-.chapter1 p{
-    font-family: 'Special Elite', cursive;
+.folklore p{
+    font-family: "Special Elite", cursive;
+    color: blanchedalmond;
     letter-spacing: 3px;
-    color: rgb(139, 111, 71);
+    font-size: 14px;
 }
 
-.flower1{
-    position: fixed;
-    top: 75px;
-    left: 75%;
-    z-index: 2;
-    transition: transform 1s ease-in;
+.title{
+    margin-top: 45px;
+    width: 100%;
+    text-align: center;
 }
 
-.flower2{
-    position: fixed;
-    top: 150px;
-    left: -12%;
-    transform: rotate(30deg);
-    z-index: 2;
-    transition: transform 1s ease-in;
-}
-
-.rebeccaWrapper{
-    padding: 0px;
-    position: fixed;
-    left: 106%;
-    top: 220px;
-    z-index: 1;
-}
-
-.rebeccaWrapper p{
-    line-height: 0px;
-    font-size: 40px;
-    font-style: italic;
-}
-
-.trainWrapper{
-    padding: 0px;
-    position: fixed;
-    left: 100%;
-    top: 220px;
-    z-index: 1;
-}
-
-.trainWrapper p{
-    font-size: 75px;
+.title p{
+    font-size: 60px;
     font-weight: bold;
-    line-height: 0px;
+    line-height: 5px;
+    color: blanchedalmond;
 }
 
-.sun{
-    position: fixed;
-    left: 105%;
-    top: -45%;
-    transition: transform 1s ease-in;
+.introduction{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
 }
 
-.house{
-    position: fixed;
-    left: -63%;
-    top: 20%;
-    z-index: 2;
-    transition: transform 1s ease-in;
+.introduction p{
+    font-family: "Special Elite", cursive;
+    color: blanchedalmond;
+    letter-spacing: 3px;
+    font-size: 14px;
 }
 
-.paper{
-    position: fixed;
-    left: -80%;
-    top: 50%;
-    z-index: 1;
-    transition: transform 1s ease-in;
+.buttonWrapper{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.billWrapper{
-    padding: 0px;
-    position: fixed;
-    left: -62px;
-    top: 295px;
-    z-index: 1;
-    transition: transform 1s ease-in;
+.button{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    display: flex;
+    border: 1px solid blanchedalmond;
 }
 
-.billWrapper p{
-    line-height: 0px;
-    font-size: 40px;
-    font-style: italic;
+.button a{
+    font-family: "Special Elite", cursive;
+    color: blanchedalmond;
+    letter-spacing: 3px;
+    font-size: 14px;
+    text-decoration: none;
 }
 
-.arrow{
-    padding: 0px;
-    position: fixed;
-    left: -62px;
-    top: 350px;
-    z-index: 1;
-    transform: rotate(75deg);
-    transition: transform 1s ease-in;
+.button a:visited{
+    text-decoration: none;
 }
-
-.hierWrapper{
-    padding: 0px;
-    position: fixed;
-    left: -200px;
-    top: 350px;
-    z-index: 1;
-    transition: transform 1s ease-in;
-}
-
-.hierWrapper p{
-    line-height: 0.5px;
-    font-size: 25px;
-    font-style: italic;
-};
