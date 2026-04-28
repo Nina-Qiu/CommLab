@@ -77,7 +77,7 @@ body{
 .house{
     position: fixed;
     left: -63%;
-    top: 20%;
+    top: 5%;
     z-index: 2;
     transition: transform 1s ease-in;
 }
@@ -306,5 +306,25 @@ body{
 .moneyWrapper2 div:nth-child(1){
     padding-top: 70px;
     padding-bottom: 0px;
+}
+
+.people2{
+    position: fixed;
+    left: 100%;
+    top: 50%;
+    transition: transform .5s ease-in;
+}
+
+.gossip{
+    position: fixed;
+    left: 100%;
+    top: 40%;
+    width: 400px;
+    transition: transform .5s ease-in;
+}
+
+.gossip p{
+    font-style: italic;
+    font-size: 25px;
 }
 

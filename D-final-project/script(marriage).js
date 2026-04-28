@@ -25,20 +25,20 @@ function windowWasScrolled() {
         let train_full_distance = windowWidth + 480;
         let train_x = train_full_distance * (percentage / 20);
 
-        document.querySelector(".trainWrapper").style.transform = "translate(" + -train_x + "px, 75px)"
+        document.querySelector(".trainWrapper").style.transform = "translateX(" + -train_x + "px)"
 
         if (percentage < 7.5) {
             // let rebecca_x_min = windowWidth - 10;
             let rebecca_full_distance = windowWidth + 480;
             let rebecca_x = rebecca_full_distance * (percentage / 20);
-            document.querySelector(".rebeccaWrapper").style.transform = "translate(" + -rebecca_x + "px, 75px)"
+            document.querySelector(".rebeccaWrapper").style.transform = "translateX(" + -rebecca_x + "px)"
         }
 
         if (percentage > 15) {
             document.querySelector(".flower1").style.transform = "translateX(500px)";
             document.querySelector(".flower2").style.transform = "translateX(-600px) rotate(45deg)";
             document.querySelector(".sun").style.transform = "translate(-300px, 300px)";
-            document.querySelector(".house").style.transform = "translateX(750px)";
+            document.querySelector(".house").style.transform = "translateX(600px)";
             document.querySelector(".paper").style.transform = "translateX(1000px)";
             document.querySelector(".billWrapper").style.transform = "translateX(600px)";
 
@@ -64,8 +64,16 @@ function windowWasScrolled() {
             document.querySelector(".billWrapper").style.transform = "translateX(-600px)";
             document.querySelector(".arrow").style.transform = "translateX(-600px) rotate(75deg)";
             document.querySelector(".hierWrapper").style.transform = "translateX(-850px)";
-            document.querySelector(".rebeccaWrapper").style.transition = "transform 1s ease-in";
-            document.querySelector(".rebeccaWrapper").style.transform = "translateX(-50px)";
+            document.querySelector(".rebeccaWrapper").style.transition = "transform .5s ease-in";
+            document.querySelector(".rebeccaWrapper").style.transform = "translateX(-1000px)";
+    }
+
+    if (percentage > 37){
+            document.querySelector(".people2").style.transform = "translateX(-400px)";
+    }
+
+    if(percentage > 39){
+        document.querySelector(".gossip").style.transform = "translateX(-550px)";
     }
 }
 
