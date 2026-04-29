@@ -48,6 +48,21 @@ body{
     justify-content: center;
 }
 
+@keyframes buttonPulse {
+    0%, 100% {
+        box-shadow: 0 0 6px  rgba(245, 222, 179, 0.15),
+                    0 0 18px rgba(245, 222, 179, 0.05);
+        border-color: rgba(245, 222, 179, 0.55);
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(245, 222, 179, 0.45),
+                    0 0 45px rgba(245, 222, 179, 0.18);
+        border-color: blanchedalmond;
+    }
+}
+
+
+
 .button{
     padding: 10px;
     padding-left: 20px;
@@ -55,6 +70,18 @@ body{
     text-align: center;
     display: flex;
     border: 1px solid blanchedalmond;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                background-color 0.35s ease,
+                box-shadow 0.35s ease;
+    animation: buttonPulse 2.8s ease-in-out infinite;
+}
+
+.button:hover {
+    transform: scale(1.07);
+    background-color: rgba(245, 222, 179, 0.08);
+    box-shadow: 0 0 28px rgba(245, 222, 179, 0.5),
+                0 0 60px rgba(245, 222, 179, 0.18);
+    border-color: blanchedalmond;
 }
 
 .button a{
@@ -63,6 +90,11 @@ body{
     letter-spacing: 3px;
     font-size: 14px;
     text-decoration: none;
+    transition: letter-spacing 0.35s ease;
+}
+
+.button:hover a {
+    letter-spacing: 5px;
 }
 
 .button a:visited{

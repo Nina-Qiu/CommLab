@@ -22,6 +22,27 @@ body{
     color: rgb(139, 111, 71);
 }
 
+.intro{
+    position: absolute;
+    top: 220px;
+    left: 400px;
+}
+
+.intro p{
+    line-height: 15px;
+    font-size: 40px;
+    /* font-weight: bold;
+    font-style: italic; */
+    letter-spacing: -.3px;
+    transition: transform .5s ease-in;
+}
+
+.intro span{
+    color:rgb(139, 111, 71);
+    font-weight: bold;
+    font-style: italic;
+}
+
 .flower1{
     position: fixed;
     top: 75px;
@@ -37,6 +58,38 @@ body{
     transform: rotate(30deg);
     z-index: 2;
     transition: transform 1s ease-in;
+}
+
+@keyframes floatTitle {
+    0%, 100% { transform: translateY(0);    }
+    50%       { transform: translateY(-7px); }
+}
+
+.cta{
+    color: rgb(139, 111, 71);
+    position: fixed;
+    top: 85%;
+    left: 47.5%;
+    transition: transform 1s ease-in, opacity 0.5s ease;
+}
+
+.cta-inner{
+    animation: floatTitle 3s ease-in-out infinite;
+}
+
+.cta p{
+    font-weight: bold;
+}
+
+.arrow1{
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transition: transform 1s ease-in, opacity 0.5s ease;
+}
+
+.arrow1-inner{
+    animation: floatTitle 3s ease-in-out infinite;
 }
 
 .rebeccaWrapper{
