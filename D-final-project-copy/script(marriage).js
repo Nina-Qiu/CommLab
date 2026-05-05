@@ -1,10 +1,14 @@
 let introOut = 0.3;
 let rebeccaOffTrain = 7.5;
 let showScene1 = 15;
+let showScene2 = 37;
 let heirNote = 20;
 let billLeaves = 31;
 let peopleShowUp = 33;
 let gossipStart = 35;
+let wedGossip1 = 42;
+let wedGossip2 = 47;
+let cleanWed = 52;
 
 
 function getScrollPercentage() {
@@ -77,20 +81,21 @@ function windowWasScrolled() {
         if (percentage > showScene1) {
             document.querySelector(".flower1").style.transform = "translateX(500px)";
             document.querySelector(".flower2").style.transform = "translateX(-600px)";
-            
+            showBill(40)
             showSun(-7, 0);
             showHouse(-10);
             showPaper(-10);
-            showBill(40);
+            
+
 
         } else {
             document.querySelector(".flower1").style.transform = "translateX(0px)";
             document.querySelector(".flower2").style.transform = "translateX(0px)";
-            
+            hideBill();
             hideSun();
             hideHouse();
             hidePaper();
-            hideBill();
+            
 
         }
 
@@ -112,6 +117,10 @@ function windowWasScrolled() {
             hideHier();
             document.querySelector(".rebeccaWrapper").style.transition = "transform .5s ease-in";
             document.querySelector(".rebeccaWrapper").style.transform = "translateX(-1000px)";
+
+    } else if (percentage > rebeccaOffTrain && percentage < billLeaves){
+            document.querySelector(".rebeccaWrapper").style.transition = "transform .5s ease-in";
+            document.querySelector(".rebeccaWrapper").style.transform = "translateX(-719px)";
     }
 
     if (percentage > peopleShowUp){
@@ -121,41 +130,108 @@ function windowWasScrolled() {
             hidePeople();
     }
 
-    if(percentage > gossipStart){
+    // if(percentage > gossipStart){
 
-        showGossip1();
-        showGossip2();
-        showGossip3();
+    //     showGossip1();
+    //     showGossip2();
+    //     showGossip3();
 
-    } else {
+    // } else {
 
-        hideGossip1();
-        hideGossip2();
-        hideGossip3();
+    //     hideGossip1();
+    //     hideGossip2();
+    //     hideGossip3();
 
-    }
+    // }
 
-    if (percentage > 37){
+    document.querySelector(".people2").addEventListener("click", showGossip);
+    document.querySelector(".people2").addEventListener("click", showCTA);
+
+    if (percentage > showScene2){
 
         hideHouse();
         hidePaper();
         hideSun();
         hidePeople();
-        hideGossip1();
-        hideGossip2();
-        hideGossip3();
+        hideGossip();
+    
 
         changeToBrown();
 
         document.querySelector(".rebeccaWrapper").style.transition = "transform .5s ease-in";
-        document.querySelector(".rebeccaWrapper").style.transform = "translate(-750px, 46px)";
+        document.querySelector(".rebeccaWrapper").style.transform = "translate(-850px, 46px)";
+        document.querySelector(".rebeccaWrapper p").style.color = "white";
 
-        showBill(40);
+        showBill(43);
+        showArch();
+
+    } else if (percentage > billLeaves && percentage < showScene2){
+
+        document.querySelector(".rebeccaWrapper p").style.color = "black";
+
+        hideBill();
+        changeToMilky();
+        hideArch();
+    }
+
+    if (percentage > wedGossip1){
+
+        showWeddingGossip1();
 
     } else {
 
-        changeToMilky();
+        hideWeddingGossip1();
+
     }
+
+    if (percentage > wedGossip2){
+
+        hideWeddingGossip1();
+        showWeddingGossip2();
+
+    } else {
+
+        hideWeddingGossip2();
+
+    }
+
+    if (percentage > cleanWed){
+
+        hideWeddingGossip2();
+        hideArch();
+
+    } else if (percentage > wedGossip2 && percentage < cleanWed){
+
+        showWeddingGossip2();
+        showArch();
+    }
+
+    if (percentage > 55){
+
+        showHolidayHouse(-10);
+
+    } else {
+
+        hideHolidayHouse();
+
+    }
+
+    if (percentage > 64){
+
+        hideHolidayHouse();
+
+    }
+
+
+    // // bills things
+    // if(percentage > showScene2){ // 37
+    //     showBill(43);
+    // }else if(percentage > showScene1){ // 15
+    //     showBill(40);
+    // }else{
+    //     hideBill();
+    // }
+
 }
 
 window.addEventListener("scroll", windowWasScrolled);
@@ -240,43 +316,101 @@ function hidePeople(){
 }
 
 
-function showGossip1(){
+function showGossip(){
     document.querySelector(".gossip1").style.transform = "translateY(-100%)";
     document.querySelector(".gossip1").style.opacity = "1";
-}
-
-function hideGossip1(){
-    document.querySelector(".gossip1").style.transform = "translateY(0%)";
-    document.querySelector(".gossip1").style.opacity = "0";
-}
-
-
-function showGossip2(){
     document.querySelector(".gossip2").style.transform = "translateY(-100%)";
     document.querySelector(".gossip2").style.opacity = "1";
-}
-
-function hideGossip2(){
-    document.querySelector(".gossip2").style.transform = "translateY(0%)";
-    document.querySelector(".gossip2").style.opacity = "0";
-}
-
-
-function showGossip3(){
     document.querySelector(".gossip3").style.transform = "translateY(-100%)";
     document.querySelector(".gossip3").style.opacity = "1";
 }
 
-function hideGossip3(){
+function hideGossip(){
+    document.querySelector(".gossip1").style.transform = "translateY(0%)";
+    document.querySelector(".gossip1").style.opacity = "0";
+    document.querySelector(".gossip2").style.transform = "translateY(0%)";
+    document.querySelector(".gossip2").style.opacity = "0";
     document.querySelector(".gossip3").style.transform = "translateY(0%)";
     document.querySelector(".gossip3").style.opacity = "0";
 }
 
 
+// function showGossip2(){
+//     document.querySelector(".gossip2").style.transform = "translateY(-100%)";
+//     document.querySelector(".gossip2").style.opacity = "1";
+// }
+
+// function hideGossip2(){
+//     document.querySelector(".gossip2").style.transform = "translateY(0%)";
+//     document.querySelector(".gossip2").style.opacity = "0";
+// }
+
+
+// function showGossip3(){
+//     document.querySelector(".gossip3").style.transform = "translateY(-100%)";
+//     document.querySelector(".gossip3").style.opacity = "1";
+// }
+
+// function hideGossip3(){
+//     document.querySelector(".gossip3").style.transform = "translateY(0%)";
+//     document.querySelector(".gossip3").style.opacity = "0";
+// }
+
+
 function changeToBrown(){
-    document.body.style.backgroundColor = "rgb(58, 41, 26)";
+    document.body.style.backgroundColor = "rgb(93, 64, 41)";
 }
 
 function changeToMilky(){
     document.body.style.backgroundColor = "rgb(253, 245, 212)";
+}
+
+
+function showArch(){
+    document.querySelector(".arch").style.transform = "translateY(0%)";
+    document.querySelector(".arch").style.top = "5%";
+}
+
+function hideArch(){
+    document.querySelector(".arch").style.transform = "translateY(-100%)";
+    document.querySelector(".arch").style.top = "0%";
+}
+
+function showWeddingGossip1(){
+    document.querySelector(".weddingGossip1").style.transform = "translateY(-100%)";
+    document.querySelector(".weddingGossip1").style.opacity = "1";
+}
+
+function hideWeddingGossip1(){
+    document.querySelector(".weddingGossip1").style.transform = "translateY(0%)";
+    document.querySelector(".weddingGossip1").style.opacity = "0";
+}
+
+function showWeddingGossip2(){
+    document.querySelector(".weddingGossip2").style.transform = "translateY(-100%)";
+    document.querySelector(".weddingGossip2").style.opacity = "1";
+}
+
+function hideWeddingGossip2(){
+    document.querySelector(".weddingGossip2").style.transform = "translateY(0%)";
+    document.querySelector(".weddingGossip2").style.opacity = "0";
+}
+
+
+function showHolidayHouse(xPerc){
+    document.querySelector(".holidayHouse").style.transform = "translateX(0%)";
+    document.querySelector(".holidayHouse").style.left = xPerc + "%";
+}
+
+function hideHolidayHouse(){
+    document.querySelector(".holidayHouse").style.transform = "translateX(-100%)"; 
+    document.querySelector(".holidayHouse").style.left = "0%"; 
+}
+
+
+function showCTA(){
+    document.querySelector(".cta").style.transform = "translateY(0px)";
+    document.querySelector(".cta").style.opacity = "1";
+    document.querySelector(".arrow1").style.transform = "translateY(0px)";
+    document.querySelector(".arrow1").style.opacity = "1";
 }

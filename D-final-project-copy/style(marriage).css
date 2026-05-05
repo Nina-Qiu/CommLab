@@ -6,7 +6,8 @@ body{
 
 .empty{
     height: 750px;
-    background-color: rgb(253, 245, 212);
+    outline: 5px black dotted;
+    /* background-color: rgb(253, 245, 212); */
 }
 
 .chapter1{
@@ -115,6 +116,7 @@ body{
     line-height: 0px;
     font-size: 40px;
     font-style: italic;
+    transition: color 1s ease;
 }
 
 .trainWrapper{
@@ -427,6 +429,15 @@ body{
     padding-bottom: 0px;
 }
 
+@keyframes glowPulse {
+    0%, 100% {
+        filter: drop-shadow(0 0 5px rgb(84, 54, 22));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgb(110, 80, 55));
+    }
+}
+
 .people2{
     width: 25%;
     position: fixed;
@@ -438,6 +449,7 @@ body{
 
 .people2 img{
     width: 100%;
+    animation: glowPulse 2s ease-in-out infinite;
 }
 
 .gossip1{
@@ -479,3 +491,305 @@ body{
     font-size: 23px;
 }
 
+.arch{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 40%;
+    transform: translateY(-100%);
+    transition: all 1s ease;
+}
+
+.arch img{
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.flowersLeft1{
+    margin-left: 4%;
+    width: 13%;
+}
+
+.flowersLeft1 img{
+    width: 100%;
+    transform: rotate(30deg);
+}
+
+.flowersRight1{
+    margin-left: 84%;
+    position: relative;
+    top: -27%;
+    width: 13%;
+}
+
+.flowersRight1 img{
+    width: 100%;
+    transform: rotate(-30deg);
+}
+
+.brocheLeft1{
+    margin-left: 5%;
+    position: relative;
+    top: -25%;
+    width: 7%;
+}
+
+.brocheLeft1 img{
+    width: 100%;
+}
+
+.brocheRight1{
+    margin-left: 88%;
+    position: relative;
+    top: -53%;
+    width: 7%;
+}
+
+.brocheRight1 img{
+    width: 100%;
+}
+
+.invitationLeft1{
+    margin-left: 4%;
+    position: relative;
+    top: -50%;
+    width: 13%;
+}
+
+.invitationLeft1 img{
+    width: 100%;
+}
+
+.invitationRight1{
+    margin-left: 83%;
+    position: relative;
+    top: -80%;
+    width: 13%;
+}
+
+.invitationRight1 img{
+    width: 100%;
+}
+
+.glovesLeft1{
+    margin-left: 6%;
+    position: relative;
+    top: -75%;
+    width: 10%;
+}
+
+.glovesLeft1 img{
+    width: 100%;
+    transform: rotate(20deg);
+}
+
+.glovesRight1{
+    margin-left: 84%;
+    position: relative;
+    top: -106%;
+    width: 10%;
+}
+
+.glovesRight1 img{
+    width: 100%;
+    transform: rotate(-20deg);
+}
+
+.cakeLeft1{
+    margin-left: 4%;
+    position: relative;
+    top: -100%;
+    width: 15%;
+}
+
+.cakeLeft1 img{
+    width: 100%;
+}
+
+.cakeRight1{
+    margin-left: 83%;
+    position: relative;
+    top: -135%;
+    width: 15%;
+}
+
+.cakeRight1 img{
+    width: 100%;
+}
+
+.flowersLeft2{
+    margin-left: 4%;
+    width: 13%;
+    position: relative;
+    top: -125%;
+}
+
+.flowersLeft2 img{
+    width: 100%;
+    transform: rotate(30deg);
+}
+
+.flowersRight2{
+    margin-left: 84%;
+    position: relative;
+    top: -153%;
+    width: 13%;
+}
+
+.flowersRight2 img{
+    width: 100%;
+    transform: rotate(-30deg);
+}
+
+.brocheLeft2{
+    margin-left: 5%;
+    position: relative;
+    top: -150%;
+    width: 7%;
+}
+
+.brocheLeft2 img{
+    width: 100%;
+}
+
+.brocheRight2{
+    margin-left: 88%;
+    position: relative;
+    top: -176%;
+    width: 7%;
+}
+
+.brocheRight2 img{
+    width: 100%;
+}
+
+.invitationLeft2{
+    margin-left: 4%;
+    position: relative;
+    top: -173%;
+    width: 13%;
+}
+
+.invitationLeft2 img{
+    width: 100%;
+}
+
+.invitationRight2{
+    margin-left: 83%;
+    position: relative;
+    top: -203%;
+    width: 13%;
+}
+
+.invitationRight2 img{
+    width: 100%;
+}
+
+.glovesLeft2{
+    margin-left: 6%;
+    position: relative;
+    top: -197%;
+    width: 10%;
+}
+
+.glovesLeft2 img{
+    width: 100%;
+    transform: rotate(20deg);
+}
+
+.glovesRight2{
+    margin-left: 84%;
+    position: relative;
+    top: -227%;
+    width: 10%;
+}
+
+.glovesRight2 img{
+    width: 100%;
+    transform: rotate(-20deg);
+}
+
+.cakeLeft2{
+    margin-left: 4%;
+    position: relative;
+    top: -222%;
+    width: 15%;
+}
+
+.cakeLeft2 img{
+    width: 100%;
+}
+
+.cakeRight2{
+    margin-left: 83%;
+    position: relative;
+    top: -255%;
+    width: 15%;
+}
+
+.cakeRight2 img{
+    width: 100%;
+}
+
+.weddingGossip1 pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 30px;
+    color:rgb(253, 245, 212)
+}
+
+.weddingGossip1{
+    position: fixed;
+    left: 15%;
+    top: 90%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.weddingGossip2 pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    color:rgb(253, 245, 212)
+}
+
+.weddingGossip2{
+    position: fixed;
+    left: 20%;
+    top: 90%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.holidayHouse{
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    width: 50%;
+    z-index: 2;
+    transition: all 1s ease-in;
+    transform: translateX(-100%); 
+}
+
+.holidayHouse img{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    background-color: rgb(139, 111, 71);
+    position: sticky;
+    top: 45vh;
+    left: 10%;
+    z-index: 3;
+    transition: all 1s ease-in;
+}
+
+.tag p{
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+}
