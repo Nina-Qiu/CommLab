@@ -9,6 +9,10 @@ let gossipStart = 35;
 let wedGossip1 = 42;
 let wedGossip2 = 47;
 let cleanWed = 52;
+let pickHouse = 55;
+let theyPart = 61;
+let doctorComes = 62;
+let doctorLeaves = 66;
 
 
 function getScrollPercentage() {
@@ -206,7 +210,7 @@ function windowWasScrolled() {
         showArch();
     }
 
-    if (percentage > 55){
+    if (percentage > pickHouse){
 
         showHolidayHouse(-10);
 
@@ -216,12 +220,45 @@ function windowWasScrolled() {
 
     }
 
-    if (percentage > 64){
+    if (percentage > theyPart){
 
         hideHolidayHouse();
+        showBill(40);
+        document.querySelector(".rebeccaWrapper").style.transform = "translateX(-600px)";
+
+    } else if (percentage > pickHouse && percentage < theyPart){
+
+        showHolidayHouse();
+        showBill(43);
+        document.querySelector(".rebeccaWrapper").style.transform = "translate(-850px, 46px)";
 
     }
 
+
+    if (percentage > doctorComes) {
+
+        showDoctor(20);
+
+    } else {
+
+        hideDoctor();
+
+    }
+
+    document.querySelector(".doctorWrapper").addEventListener("click", showDoctorWords)
+    document.querySelector(".doctorWrapper").addEventListener("click", doctorStopGlow)    
+    document.querySelector(".doctorWrapper").addEventListener("click", showCTA)
+    document.querySelector(".doctorWrapper").addEventListener("click", billGlows)
+    
+    document.querySelector(".billWrapper").addEventListener("click", showBillWords)
+    document.querySelector(".billWrapper").addEventListener("click", billStopGlow)
+
+    if (percentage > doctorLeaves){
+
+        wordGoes();
+        hideDoctor();
+
+    }
 
     // // bills things
     // if(percentage > showScene2){ // 37
@@ -414,3 +451,47 @@ function showCTA(){
     document.querySelector(".arrow1").style.transform = "translateY(0px)";
     document.querySelector(".arrow1").style.opacity = "1";
 }
+
+function showDoctor(xPerc){
+    document.querySelector(".doctorWrapper").style.transform = "translateX(0%)";
+    document.querySelector(".doctorWrapper").style.left = xPerc + "%";
+}
+
+function hideDoctor(){
+    document.querySelector(".doctorWrapper").style.transform = "translateX(-100%)";
+    document.querySelector(".doctorWrapper").style.left = "0%";
+}
+
+function showDoctorWords(){
+    document.querySelector(".doctorWords").style.transform = "translateY(-100%)";
+    document.querySelector(".doctorWords").style.opacity = "1";
+}
+
+function doctorStopGlow(){
+    document.querySelector(".doctorWrapper p").style.animation = "none";
+    document.querySelector(".billWrapper").style.cursor = "pointer";
+    document.querySelector(".billWrapper").style.zIndex = "3";
+    
+}
+
+function billGlows(){
+    document.querySelector(".billWrapper p").style.animation = "doctorPulse 2s ease-in-out infinite";
+}
+
+function showBillWords(){
+    document.querySelector(".billWords").style.transform = "translateY(-100%)";
+    document.querySelector(".billWords").style.opacity = "1";
+}
+
+function billStopGlow(){
+    document.querySelector(".billWrapper p").style.animation = "none";
+}
+
+function wordGoes(){
+    document.querySelector(".doctorWords").style.transform = "translateY(0%)";
+    document.querySelector(".doctorWords").style.opacity = "0";
+    document.querySelector(".billWords").style.transform = "translateY(0%)";
+    document.querySelector(".billWords").style.opacity = "0";
+}
+
+

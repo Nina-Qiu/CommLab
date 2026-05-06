@@ -6,7 +6,7 @@ body{
 
 .empty{
     height: 750px;
-    outline: 5px black dotted;
+    /* outline: 5px black dotted; */
     /* background-color: rgb(253, 245, 212); */
 }
 
@@ -793,3 +793,67 @@ body{
     font-family: 'Special Elite', cursive;
     font-size: 18px;
 }
+
+.doctorWrapper{
+    position: fixed;
+    left: 0%;
+    top: 60%;
+    transition: all 1s ease-in;
+    z-index: 3;
+    cursor: pointer;
+    transform: translateX(-100%);
+}
+
+.doctorWrapper p{
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    animation: doctorPulse 2s ease-in-out infinite;
+}
+
+@keyframes doctorPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.85;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+}
+
+.doctorWords{
+    position: fixed;
+    left: 20%;
+    top: 65%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.doctorWords pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    line-height: 15px;
+}
+
+.billWords{
+    position: fixed;
+    left: 30%;
+    top: 37%;
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.billWords pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 15px;
+}
+
+
