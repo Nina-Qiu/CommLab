@@ -134,20 +134,6 @@ function windowWasScrolled() {
             hidePeople();
     }
 
-    // if(percentage > gossipStart){
-
-    //     showGossip1();
-    //     showGossip2();
-    //     showGossip3();
-
-    // } else {
-
-    //     hideGossip1();
-    //     hideGossip2();
-    //     hideGossip3();
-
-    // }
-
     document.querySelector(".people2").addEventListener("click", showGossip);
     document.querySelector(".people2").addEventListener("click", showCTA);
 
@@ -260,18 +246,103 @@ function windowWasScrolled() {
 
     }
 
-    // // bills things
-    // if(percentage > showScene2){ // 37
-    //     showBill(43);
-    // }else if(percentage > showScene1){ // 15
-    //     showBill(40);
-    // }else{
-    //     hideBill();
-    // }
+    if (percentage > 68){
+        partySetup();
+        showPartyPeople1(0);
+        showPartyPeople2(0);
+    } else if (percentage > doctorLeaves && percentage < 68){
+        showBill(43);
+        document.querySelector(".rebeccaWrapper").style.transform = "translate(-850px, 46px)";
+        hidePartyPeople1();
+        hidePartyPeople2();
+    }
+
+    if (percentage > 72.3){
+        document.querySelector(".champ1 img").style.transform = "rotate(15deg)";
+        document.querySelector(".champ2 img").style.transform = "rotate(-15deg)";
+    } else {
+        document.querySelector(".champ1 img").style.transform = "rotate(0deg)";
+        document.querySelector(".champ2 img").style.transform = "rotate(0deg)";
+    }
+
+    if (percentage > 73.8){
+        document.querySelector(".champ3 img").style.transform = "rotate(15deg)";
+        document.querySelector(".champ4 img").style.transform = "rotate(-15deg)";
+    } else {
+        document.querySelector(".champ3 img").style.transform = "rotate(0deg)";
+        document.querySelector(".champ4 img").style.transform = "rotate(0deg)";
+    }
+
+    if (percentage > 75.4){
+        document.querySelector(".champ5 img").style.transform = "rotate(15deg)";
+        document.querySelector(".champ6 img").style.transform = "rotate(-15deg)";
+    } else {
+        document.querySelector(".champ5 img").style.transform = "rotate(0deg)";
+        document.querySelector(".champ6 img").style.transform = "rotate(0deg)";
+    }
+
+    document.querySelector(".partyPeople1").addEventListener("click", showPartyGossip);
+    document.querySelector(".partyPeople1").addEventListener("click", people1StopPulse);
+    document.querySelector(".partyPeople2").addEventListener("click", showPartyGossip2);
+    document.querySelector(".partyPeople2").addEventListener("click", people2StopPulse);
+    document.querySelector(".partyPeople2").addEventListener("click", showCTA);
+
+    if (percentage > 79){
+        hidePartyPeople1();
+        hidePartyPeople2();
+        hidePartyGossip();
+        hidePartyGossip2();
+
+    } else if (percentage > 78){
+        people1StopPulse();
+        people2StopPulse();
+        hideCTA();
+
+    } else if (percentage > 76){
+        document.querySelector(".partyPeople1 img").style.animation = "doctorPulse 2s ease-in-out infinite";
+        document.querySelector(".partyPeople1 img").style.cursor = "pointer";
+
+    } else {
+        people1StopPulse();
+        people2StopPulse();
+    }
+
+    if (percentage > 80){
+    
+        showTomb();
+        changeToDarkBrown();
+
+    } else {
+
+        hideTomb();
+
+    }
+
+    if (percentage > 83){
+
+        showDeathGossip();
+
+    } else {
+
+        hideDeathGossip();
+
+    }
 
 }
 
+
+
 window.addEventListener("scroll", windowWasScrolled);
+
+
+
+
+
+
+
+
+
+
 
 
 function showHouse(xPerc){
@@ -370,29 +441,6 @@ function hideGossip(){
     document.querySelector(".gossip3").style.transform = "translateY(0%)";
     document.querySelector(".gossip3").style.opacity = "0";
 }
-
-
-// function showGossip2(){
-//     document.querySelector(".gossip2").style.transform = "translateY(-100%)";
-//     document.querySelector(".gossip2").style.opacity = "1";
-// }
-
-// function hideGossip2(){
-//     document.querySelector(".gossip2").style.transform = "translateY(0%)";
-//     document.querySelector(".gossip2").style.opacity = "0";
-// }
-
-
-// function showGossip3(){
-//     document.querySelector(".gossip3").style.transform = "translateY(-100%)";
-//     document.querySelector(".gossip3").style.opacity = "1";
-// }
-
-// function hideGossip3(){
-//     document.querySelector(".gossip3").style.transform = "translateY(0%)";
-//     document.querySelector(".gossip3").style.opacity = "0";
-// }
-
 
 function changeToBrown(){
     document.body.style.backgroundColor = "rgb(93, 64, 41)";
@@ -494,4 +542,80 @@ function wordGoes(){
     document.querySelector(".billWords").style.opacity = "0";
 }
 
+function partySetup(){
 
+    document.querySelector(".billWrapper").style.transform = "translate(-50px, 50px)";
+    document.querySelector(".rebeccaWrapper").style.transform = "translate(-700px, 95px)";
+
+}
+
+function showPartyPeople1(xPerc){
+    document.querySelector(".partyPeople1").style.transform = "translateX(0%)";
+    document.querySelector(".partyPeople1").style.left = xPerc + "%";
+}
+
+function hidePartyPeople1(){
+    document.querySelector(".partyPeople1").style.transform = "translateX(-100%)";
+    document.querySelector(".partyPeople1").style.left = "0%";
+}
+
+function showPartyPeople2(xPerc){
+    document.querySelector(".partyPeople2").style.transform = "translateX(0%)";
+    document.querySelector(".partyPeople2").style.right = xPerc + "%";
+}
+
+function hidePartyPeople2(){
+    document.querySelector(".partyPeople2").style.transform = "translateX(100%)";
+    document.querySelector(".partyPeople2").style.right = "0%";
+}
+
+function showPartyGossip(){
+    document.querySelector(".partyGossip").style.transform = "translateY(-100%)";
+    document.querySelector(".partyGossip").style.opacity = "1";
+}
+
+function hidePartyGossip(){
+    document.querySelector(".partyGossip").style.transform = "translateY(0%)";
+    document.querySelector(".partyGossip").style.opacity = "0";
+}
+
+function people1StopPulse(){
+    document.querySelector(".partyPeople1 img").style.animation = "none";
+    document.querySelector(".partyPeople2 img").style.animation = "doctorPulse 2s ease-in-out infinite";
+}
+
+function showPartyGossip2(){
+    document.querySelector(".partyGossip2").style.transform = "translateY(-100%)";
+    document.querySelector(".partyGossip2").style.opacity = "1";
+}
+
+function hidePartyGossip2(){
+    document.querySelector(".partyGossip2").style.transform = "translateY(0%)";
+    document.querySelector(".partyGossip2").style.opacity = "0";
+}
+
+function people2StopPulse(){
+    document.querySelector(".partyPeople2 img").style.animation = "none";
+}
+
+function changeToDarkBrown(){
+    document.body.style.backgroundColor = "rgb(45, 31, 20)";
+}
+
+function showTomb(){
+    document.querySelector(".tomb").style.opacity = "1";
+}
+
+function hideTomb(){
+    document.querySelector(".tomb").style.opacity = "0";
+}
+
+function showDeathGossip(){
+    document.querySelector(".deathGossip").style.transform = "translateY(-100%)";
+    document.querySelector(".deathGossip").style.opacity = "1";
+}
+
+function hideDeathGossip(){
+    document.querySelector(".deathGossip").style.transform = "translateY(0%)";
+    document.querySelector(".deathGossip").style.opacity = "0";
+}

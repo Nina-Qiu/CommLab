@@ -1,0 +1,124 @@
+body{
+        background-color: rgb(253, 245, 212);
+}
+
+.empty{
+    height: 90vh;
+    outline: dotted 2px black;
+}
+
+.people1{
+    width: 20%;
+    position: fixed;
+    left: 0%;
+    top: 30%;
+
+}
+
+.people1 img{
+    width: 100%;
+}
+
+.people2{
+    width: 30%;
+    position: fixed;
+    left: 0%;
+    top: 50%;
+}
+
+.people2 img{
+    width: 100%;
+}
+
+.people3{
+    width: 28%;
+    position: fixed;
+    right: 3%;
+    top: 28%;
+}
+
+.people3 img{
+    width: 100%;
+}
+
+.people4{
+    width: 30%;
+    position: fixed;
+    right: -5%;
+    top: 40%;
+}
+
+.people4 img{
+    width: 100%;
+}
+
+.rumors{
+    position: fixed;
+    left: 27%;
+    top: 20%;
+}
+
+.rumors p{
+    line-height: 30px;
+    font-size: 35px;
+    opacity: 0;
+    transform: rotate(-10deg);
+}
+
+.rumors span{
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(139, 111, 71);
+}
+
+.central{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@keyframes appearText{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+        transform: rotate(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+        transform: rotate(0deg);
+    }
+}
+
+.rumors p:nth-child(1){
+    animation: appearText 2s 1s ease forwards;
+}
+.rumors p:nth-child(2){
+    animation: appearText 2s 2s ease forwards;
+    position: relative;
+    left: -100px;
+}
+.rumors p:nth-child(3){
+    animation: appearText 2s 3s ease forwards;
+    position: relative;
+    left: -20px;
+}
+.rumors p:nth-child(4){
+    animation: appearText 2s 4s ease forwards;
+    position: relative;
+    left: -30px;
+}
+
+.linkWrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.linkWrapper a{
+    font-family: "Special Elite", cursive;
+    font-size: 20px;
+    color:rgb(139, 111, 71);
+}
+
