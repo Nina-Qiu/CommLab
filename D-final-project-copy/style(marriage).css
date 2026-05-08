@@ -25,7 +25,11 @@ body{
 .intro{
     position: absolute;
     top: 30%;
-    left: 30%;
+    /* left: 30%; */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 710px;
+    /* outline: 1px solid red; */
 }
 
 .intro p{
@@ -82,6 +86,7 @@ body{
     top: 85%;
     left: 47.5%;
     transition: transform 1s ease-in, opacity 0.5s ease;
+    pointer-events: none;
 }
 
 .cta-inner{
@@ -243,6 +248,7 @@ body{
 
 .moneyWrapperWrapper{
     display: flex;
+    /* outline: 1px solid green; */
 }
 
 .moneyWrapper{
@@ -428,12 +434,15 @@ body{
     padding-bottom: 0px;
 }
 
+
 @keyframes glowPulse {
     0%, 100% {
         filter: drop-shadow(0 0 5px rgb(84, 54, 22));
+        transform: scale(1);
     }
     50% {
         filter: drop-shadow(0 0 20px rgb(110, 80, 55));
+        transform: scale(1.1);
     }
 }
 
@@ -444,6 +453,7 @@ body{
     top: 50%;
     transition: all .5s ease-in;
     transform: translateX(100%);
+    cursor: pointer;
 }
 
 .people2 img{
@@ -504,7 +514,406 @@ body{
     transform: translateX(-50%);
 }
 
-.flowersLeft1{
+
+
+.weddingDecoration{
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.weddingDecoration div{
+    width: 50%;
+    height: 200px;
+    /* outline: 1px solid blue; */
+    display: flex;
+}
+.weddingDecoration div img{
+    height: 100%;
+}
+.weddingDecoration div:nth-child(even){
+    width: 50%;
+    height: 200px;
+    /* outline: 1px solid rgb(145, 112, 26); */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.weddingGossip1 pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 30px;
+    color:rgb(253, 245, 212)
+}
+
+.weddingGossip1{
+    position: fixed;
+    left: 15%;
+    top: 90%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.weddingGossip2 pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    color:rgb(253, 245, 212)
+}
+
+.weddingGossip2{
+    position: fixed;
+    left: 20%;
+    top: 90%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.holidayHouse{
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    width: 50%;
+    z-index: 2;
+    transition: all 1s ease-in;
+    transform: translateX(-100%); 
+}
+
+.holidayHouse img{
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.tag{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    background-color: rgb(139, 111, 71);
+    position: sticky;
+    top: 45vh;
+    left: 10%;
+    z-index: 3;
+    transition: all 1s ease-in;
+}
+
+.tag p{
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+}
+
+.doctorWrapper{
+    position: fixed;
+    left: 0%;
+    top: 60%;
+    transition: all 1s ease-in;
+    z-index: 3;
+    cursor: pointer;
+    transform: translateX(-100%);
+}
+
+.doctorWrapper p{
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+    animation: doctorPulse 2s ease-in-out infinite;
+}
+
+@keyframes doctorPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.85;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+}
+
+.doctorWords{
+    position: fixed;
+    left: 20%;
+    top: 65%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.doctorWords pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    line-height: 15px;
+}
+
+.billWords{
+    position: fixed;
+    left: 30%;
+    top: 37%;
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.billWords pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 15px;
+}
+
+.partyPeople1{
+    position: fixed;
+    left: 0%;
+    top: 50%;
+    width: 20%;
+    transition: all 1s ease-in;
+    transform: translateX(-100%);
+    cursor: pointer;
+}
+
+.partyPeople1 img{
+    width: 100%;
+    animation: doctorPulse 2s ease-in-out infinite
+}
+
+.partyPeople2{
+    position: fixed;
+    right: 0%;
+    top: 50%;
+    width: 20%;
+    transition: all 1s ease-in;
+    transform: translateX(100%);
+    cursor: pointer;
+}
+
+.partyPeople2 img{
+    width: 100%;
+}
+
+.champWrapperWrapperA{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: red 2px dotted; */
+}
+
+.champWrapperA{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* border: blue 2px solid; */
+    padding: 0px;
+}
+
+.champ1{
+    display: flex;
+    margin: 0px;
+    width: 15%;
+    /* outline: yellow 2px dotted; */
+}
+
+.champ1 img{
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.champagne div{
+     transition: transform 0.1s ease-in;
+}
+
+.champ2{
+    display: flex;
+    margin: 0px;
+    width: 15%;
+    /* outline: orange 2px dotted; */
+}
+
+.champ2 img{
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.champWrapperWrapperB{
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    /* border: red 2px dotted; */
+}
+
+.champWrapperB{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* border: blue 2px solid; */
+    padding: 0px;
+}
+
+.champ3{
+    display: flex;
+    margin: 0px;
+    width: 15%;
+    /* outline: yellow 2px dotted; */
+}
+
+.champ3 img{
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.champ4{
+    display: flex;
+    margin: 0px;
+    width: 15%;
+    /* outline: orange 2px dotted; */
+}
+
+.champ4 img{
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.champWrapperWrapperC{
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    /* border: red 2px dotted; */
+}
+
+.champWrapperC{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* border: blue 2px solid; */
+    padding: 0px;
+}
+
+.champ5{
+    display: flex;
+    margin: 0px;
+    width: 15%;
+    /* outline: yellow 2px dotted; */
+}
+
+.champ5 img{
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.champ6{
+    display: flex;
+    margin: 0px;
+    width: 15%;
+    /* outline: orange 2px dotted; */
+}
+
+.champ6 img{
+    width: 100%;
+    transition: transform 0.3s ease-in;
+}
+
+.partyGossip{
+    position: fixed;
+    left: 3%;
+    top: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.partyGossip pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 15px;
+    color: rgb(253, 245, 212);
+}
+
+.partyGossip2{
+    position: fixed;
+    left: 70%;
+    top: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.partyGossip2 pre{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 20px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 15px;
+    color: rgb(253, 245, 212);
+}
+
+.tomb{
+    width: 15%;
+    position: fixed;
+    top: 30%;
+    left: 31%;
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+
+.tomb img{
+    width: 100%;
+}
+
+.deathGossip{
+    position: fixed;
+    left: 23%;
+    top: 85%;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+
+.deathGossip p{
+    font-style: italic;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.linkWrapper{
+    width: 100%;
+    text-align: center;
+    /* position: sticky; */
+    /* top: 85vh; */
+    margin-bottom: 100px;
+}
+
+.linkWrapper a{
+    font-family:  'Special Elite', cursive;
+    color: rgb(253, 245, 212);
+}
+
+
+.trigger{
+    width:100%;
+    /* outline: 3px dotted red; */
+}
+
+
+
+
+
+
+
+
+
+
+/* NOT NEEDED: */
+
+
+/* .flowersLeft1{
     margin-left: 4%;
     width: 13%;
 }
@@ -728,349 +1137,4 @@ body{
 
 .cakeRight2 img{
     width: 100%;
-}
-
-.weddingGossip1 pre{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-style: italic;
-    line-height: 30px;
-    color:rgb(253, 245, 212)
-}
-
-.weddingGossip1{
-    position: fixed;
-    left: 15%;
-    top: 90%;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.weddingGossip2 pre{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    font-style: italic;
-    color:rgb(253, 245, 212)
-}
-
-.weddingGossip2{
-    position: fixed;
-    left: 20%;
-    top: 90%;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.holidayHouse{
-    position: fixed;
-    left: 0%;
-    top: 50%;
-    width: 50%;
-    z-index: 2;
-    transition: all 1s ease-in;
-    transform: translateX(-100%); 
-}
-
-.holidayHouse img{
-    width: 100%;
-    transform: translateY(-50%);
-}
-
-.tag{
-    display: flex;
-    justify-content: center;
-    width: 15%;
-    background-color: rgb(139, 111, 71);
-    position: sticky;
-    top: 45vh;
-    left: 10%;
-    z-index: 3;
-    transition: all 1s ease-in;
-}
-
-.tag p{
-    font-family: 'Special Elite', cursive;
-    font-size: 18px;
-}
-
-.doctorWrapper{
-    position: fixed;
-    left: 0%;
-    top: 60%;
-    transition: all 1s ease-in;
-    z-index: 3;
-    cursor: pointer;
-    transform: translateX(-100%);
-}
-
-.doctorWrapper p{
-    font-size: 40px;
-    color: white;
-    font-style: italic;
-    animation: doctorPulse 2s ease-in-out infinite;
-}
-
-@keyframes doctorPulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.85;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-    }
-    50% {
-        transform: scale(1.08);
-        opacity: 1;
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-    }
-}
-
-.doctorWords{
-    position: fixed;
-    left: 20%;
-    top: 65%;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.doctorWords pre{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-style: italic;
-    color: white;
-    line-height: 15px;
-}
-
-.billWords{
-    position: fixed;
-    left: 30%;
-    top: 37%;
-    z-index: 1;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.billWords pre{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 15px;
-}
-
-.partyPeople1{
-    position: fixed;
-    left: 0%;
-    top: 50%;
-    width: 20%;
-    transition: all 1s ease-in;
-    transform: translateX(-100%);
-}
-
-.partyPeople1 img{
-    width: 100%;
-}
-
-.partyPeople2{
-    position: fixed;
-    right: 0%;
-    top: 50%;
-    width: 20%;
-    transition: all 1s ease-in;
-    transform: translateX(100%);
-}
-
-.partyPeople2 img{
-    width: 100%;
-}
-
-.champWrapperWrapperA{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    /* border: red 2px dotted; */
-}
-
-.champWrapperA{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* border: blue 2px solid; */
-    padding: 0px;
-}
-
-.champ1{
-    display: flex;
-    margin: 0px;
-    width: 15%;
-    /* outline: yellow 2px dotted; */
-}
-
-.champ1 img{
-    width: 100%;
-    transition: transform 0.3s ease-in;
-}
-
-.champ2{
-    display: flex;
-    margin: 0px;
-    width: 15%;
-    /* outline: orange 2px dotted; */
-}
-
-.champ2 img{
-    width: 100%;
-    transition: transform 0.3s ease-in;
-}
-
-.champWrapperWrapperB{
-    width: 100%;
-    margin-top: 15%;
-    display: flex;
-    justify-content: center;
-    /* border: red 2px dotted; */
-}
-
-.champWrapperB{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* border: blue 2px solid; */
-    padding: 0px;
-}
-
-.champ3{
-    display: flex;
-    margin: 0px;
-    width: 15%;
-    /* outline: yellow 2px dotted; */
-}
-
-.champ3 img{
-    width: 100%;
-    transition: transform 0.3s ease-in;
-}
-
-.champ4{
-    display: flex;
-    margin: 0px;
-    width: 15%;
-    /* outline: orange 2px dotted; */
-}
-
-.champ4 img{
-    width: 100%;
-    transition: transform 0.3s ease-in;
-}
-
-.champWrapperWrapperC{
-    width: 100%;
-    margin-top: 15%;
-    display: flex;
-    justify-content: center;
-    /* border: red 2px dotted; */
-}
-
-.champWrapperC{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    /* border: blue 2px solid; */
-    padding: 0px;
-}
-
-.champ5{
-    display: flex;
-    margin: 0px;
-    width: 15%;
-    /* outline: yellow 2px dotted; */
-}
-
-.champ5 img{
-    width: 100%;
-    transition: transform 0.3s ease-in;
-}
-
-.champ6{
-    display: flex;
-    margin: 0px;
-    width: 15%;
-    /* outline: orange 2px dotted; */
-}
-
-.champ6 img{
-    width: 100%;
-    transition: transform 0.3s ease-in;
-}
-
-.partyGossip{
-    position: fixed;
-    left: 3%;
-    top: 50%;
-    z-index: 1;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.partyGossip pre{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 15px;
-    color: rgb(253, 245, 212);
-}
-
-.partyGossip2{
-    position: fixed;
-    left: 70%;
-    top: 50%;
-    z-index: 1;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.partyGossip2 pre{
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 20px;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 15px;
-    color: rgb(253, 245, 212);
-}
-
-.tomb{
-    width: 15%;
-    position: fixed;
-    top: 30%;
-    left: 31%;
-    opacity: 0;
-    transition: all 2s ease-in;
-}
-
-.tomb img{
-    width: 100%;
-}
-
-.deathGossip{
-    position: fixed;
-    left: 23%;
-    top: 85%;
-    opacity: 0;
-    transition: all .5s ease-in;
-}
-
-.deathGossip p{
-    font-style: italic;
-    font-size: 40px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.linkWrapper{
-    width: 100%;
-    text-align: center;
-    position: sticky;
-    top: 85vh;
-}
-
-.linkWrapper a{
-    font-family:  'Special Elite', cursive;
-    color: rgb(253, 245, 212);
-}
-
+} */
