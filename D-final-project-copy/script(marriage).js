@@ -325,10 +325,10 @@ enterView({
     enter: function (el) {
         showDoctor(20);
 
-        if(doctorWasClickedOnce == false){
- deactivateScroll();
+        if (doctorWasClickedOnce == false) {
+            deactivateScroll();
         }
-       
+
 
     },
     exit: function (el) {
@@ -358,17 +358,17 @@ enterView({
     selector: '.partyStart',
     enter: function (el) {
         hideDoctor();
-        wordGoes() 
+        wordGoes()
         hideCTA()
         hideArrow();
-        
-      
-   
+
+
+
 
     },
     exit: function (el) {
-        
-       showDoctor(20);
+
+        showDoctor(20);
     },
     progress: function (el, progress) {
 
@@ -388,17 +388,17 @@ enterView({
         el.querySelector("div:nth-child(2)").style.transform = "rotate(-15deg)";
         showPartyPeople1(0);
         showPartyPeople2(0);
-      
+
     },
     exit: function (el) {
 
         el.querySelector("div:nth-child(1)").style.transform = "rotate(0deg)";
         el.querySelector("div:nth-child(2)").style.transform = "rotate(0deg)";
 
-         hidePartyPeople1(0);
+        hidePartyPeople1(0);
         hidePartyPeople2(0);
-      
-        
+
+
     },
     progress: function (el, progress) {
 
@@ -409,11 +409,11 @@ enterView({
 });
 
 
-    document.querySelector(".partyPeople1").addEventListener("click", showPartyGossip);
-    document.querySelector(".partyPeople1").addEventListener("click", people1StopPulse);
-    document.querySelector(".partyPeople2").addEventListener("click", showPartyGossip2);
-    document.querySelector(".partyPeople2").addEventListener("click", people2StopPulse);
-    document.querySelector(".partyPeople2").addEventListener("click", showCTA);
+document.querySelector(".partyPeople1").addEventListener("click", showPartyGossip);
+document.querySelector(".partyPeople1").addEventListener("click", people1StopPulse);
+document.querySelector(".partyPeople2").addEventListener("click", showPartyGossip2);
+document.querySelector(".partyPeople2").addEventListener("click", people2StopPulse);
+document.querySelector(".partyPeople2").addEventListener("click", showCTA);
 
 
 enterView({
@@ -422,16 +422,16 @@ enterView({
         hidePartyPeople1();
         hidePartyPeople2();
         changeToDarkBrown();
-        
-        
-      
+
+
+
     },
     exit: function (el) {
 
         showPartyPeople1(0);
         showPartyPeople2(0);
         changeToBrown();
-        
+
     },
     progress: function (el, progress) {
 
@@ -447,13 +447,13 @@ enterView({
     enter: function (el) {
         showTomb();
 
-        
-        
+
+
     },
     exit: function (el) {
 
         hideTomb();
-        
+
     },
     progress: function (el, progress) {
 
@@ -470,13 +470,13 @@ enterView({
         hidePartyGossip();
         hidePartyGossip2();
 
-        
-        
+
+
     },
     exit: function (el) {
 
         hideDeathGossip();
-        
+
     },
     progress: function (el, progress) {
 
